@@ -1,0 +1,70 @@
+# ─────────────────────────────
+# TITLES
+# ─────────────────────────────
+titles:
+  fade-in: 0
+  stay: 20
+  fade-out: 10
+
+# ─────────────────────────────
+# MESSAGES
+# ─────────────────────────────
+messages:
+  wilderness:
+    title: ''
+    subtitle: '&2Wilderness'
+
+  town:
+    title: ''
+    subtitle: '&3%townyshow_town_name%%townyshow_town_nation%'
+
+  actionbar:
+    enabled: true
+    text: '%townyshow_plot_name%%townyshow_plot_owner%%townyshow_plot_price%%townyshow_plot_home%'
+
+# ─────────────────────────────
+# PLACEHOLDERS
+# ─────────────────────────────
+placeholders:
+
+  # ───── TOWN ─────
+  town:
+    name:
+      wrapper: '%s'
+      empty: Wilderness
+
+    nation:
+      wrapper: '&7 | &6%s'
+      empty: Without a nation
+
+    home:
+      value: '&6Homeblock'
+      empty: ''
+
+  # ───── PLOT ─────
+  plot:
+    name:
+      wrapper: '%s'
+      empty: '&7Untitled'
+
+    owner:
+      wrapper: ' &7| &3%s'
+      empty: ''
+
+    home:
+      value: ' &7| &6Homeblock'
+      empty: ''
+
+    price:
+      wrapper: ' &7| %s'
+      not-for-sale: ''
+      free: '&aFree'
+      format: '&e%price%%currency%'
+
+  # ───── PVP ───── not working rn
+  pvp:
+    empty: ''
+    wrapper: ' &7| &cPvP: %s'
+    on: '&con'
+    off: '&aoff'
+
