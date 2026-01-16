@@ -1,5 +1,9 @@
 # TownyShow
 
+Plugin for Towny that adds customisation to the actionbar/titles.
+
+**IMPORTANT! Set the value** `notifications_appear_as: none` **in towny config.yml.**
+
 ## Requirements
 
 * **Spigot(maybe) / Paper** 1.20+
