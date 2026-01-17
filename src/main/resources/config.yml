@@ -35,7 +35,7 @@ placeholders:
 
     nation:
       wrapper: '&7 | &6%s'
-      empty: Without a nation
+      empty: Nationless
 
     home:
       value: '&6Homeblock'

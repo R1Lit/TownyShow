@@ -115,6 +115,4 @@ public class PBPlaceholders extends PlaceholderExpansion {
         return val != null ? val : "";
     }
 
-
-
 }
