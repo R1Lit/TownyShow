@@ -105,8 +105,39 @@ public class PBPlaceholders extends PlaceholderExpansion {
                 }
 // todo
             case "pvp": {
+                if (player == null) return "";
 
+
+                boolean pvpEnabled = api.isPVP(player.getLocation());
+
+
+                String result = pvpEnabled
+                        ? cfg("placeholders.plot.pvp.enabled")
+                        : cfg("placeholders.plot.pvp.disabled");
+
+                return wrap("placeholders.plot.pvp", result);
             }
+
+            case "plot_type": {
+                if (block == null) return "";
+
+                String typeKey = block.getType().getName(); 
+
+                if (typeKey == null || typeKey.isEmpty()) {
+                    typeKey = cfg("placeholders.plot.type.empty");
+                }
+
+                String customName = cfg("placeholders.plot.types." + typeKey.toLowerCase());
+
+                String result = customName != null && !customName.isEmpty()
+                        ? customName
+                        : typeKey;
+
+                return wrap("placeholders.plot.type", result);
+            }
+
+
+
         }
         return "";
     }

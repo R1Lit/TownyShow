@@ -61,10 +61,10 @@ placeholders:
       free: '&aFree'
       format: '&e%price%%currency%'
 
-  # ───── PVP ───── not working rn
-  pvp:
-    empty: ''
-    wrapper: ' &7| &cPvP: %s'
-    on: '&con'
-    off: '&aoff'
+    pvp:
+      enabled: "PvP on"
+      disabled: "PvP off"
+      wrapper: ' &7| %s'
+
+
 
