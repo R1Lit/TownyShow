@@ -65,6 +65,21 @@ placeholders:
       enabled: "PvP on"
       disabled: "PvP off"
       wrapper: ' &7| %s'
+    type:
+      wrapper: ' &8| &b%s'   
+      empty: ''
+
+      types:
+        default: "Default"
+        shop: "Shop"
+        arena: "Arena"
+        embassy: "Embassy"
+        farm: "Farm"
+        inn: "Inn"
+        jail: "Jail"
+        bank: "Bank"
+        wilds: "Wilderness"
+
 
 
 

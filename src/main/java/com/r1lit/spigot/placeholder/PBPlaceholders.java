@@ -121,7 +121,7 @@ public class PBPlaceholders extends PlaceholderExpansion {
             case "plot_type": {
                 if (block == null) return "";
 
-                String typeKey = block.getType().getName(); 
+                String typeKey = block.getType().getName();
 
                 if (typeKey == null || typeKey.isEmpty()) {
                     typeKey = cfg("placeholders.plot.type.empty");
